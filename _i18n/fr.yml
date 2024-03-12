@@ -1,0 +1,26 @@
+site:
+  name: DFDR Équipe de service
+  title: Ressources de l'équipe de service DFDR
+  language: English
+  header: Cette page contient des liens vers un certain nombre de ressources créées par l'équipe du service DFDR pour usage interne et pour usage par la communauté de gestion des données de recherche.
+  instructions: Cliquez sur le titre d'une section pour afficher toutes les ressources qui s'y rapportent.
+
+sections:
+  other: "Autres"
+
+footer:
+  links: Liens rapides
+  copyright: Alliance de recherche numérique du Canada
+  frdr:
+    logo: /images/FRDR_logo_french-first_reversed.png
+    alt: Dépôt fédéré de données de recherche
+  alliance:
+    logo: /images/Alliance_logo_French-first_reversed.png
+    alt: Alliance de recherche numérique du Canada
+    url: "https://alliancecan.ca/fr"
+  linkedin:
+    aria: 'Alliance de recherche numérique du Canada Linked In'
+    url: "https://www.linkedin.com/company/alliancecan/"
+  twitter:
+    aria: "Alliance de recherche numérique du Canada Twitter"
+    url: "https://twitter.com/Alliance_Can"

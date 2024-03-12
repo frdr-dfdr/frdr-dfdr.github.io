@@ -1,2 +1,10 @@
 auto: true
 include: [".well-known"]
+languages: ["en", "fr"]
+exclude_from_localizations: ["javascript", "images", "css"]
+default_locale_isn_subfolder: true
+website: http://127.0.0.1:4000/
+baseurl: ''
+
+plugins:
+  - jekyll-multiple-languages-plugin
