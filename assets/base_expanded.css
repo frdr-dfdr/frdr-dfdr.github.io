@@ -324,6 +324,10 @@ p {
   min-height: 511px;
 }
 
+.site-title {
+  font-weight: 600;
+}
+
 
 #websiteFooter {
   background-color: #272727;
@@ -332,7 +336,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: 'Arial', sans-serif;
   padding-top: 30px;
 }
 
@@ -518,12 +521,12 @@ p {
 
 @media (min-width: 1561px) {
   .footer-contact {
-    max-width: 25%;
+    max-width: 20%;
     border-right: 1px solid #fff;
   }
 
   .footer-social {
-    max-width: 25%;
+    max-width: 20%;
   }
 }
 
@@ -1052,7 +1055,7 @@ p {
   overflow: hidden;
 }
 .menu-item-price {
-  color: #72b16e;
+  color: #856D2C;
   display: block;
 }
 .menu-item-variations .menu-item-price {
@@ -1062,10 +1065,13 @@ p {
   display: inline-block;
 }
 .menu-item-price-range {
-  color: #72b16e;
+  color: #856D2C;
 }
 .menu-item-price a, .menu-item-price-range a {
-  color: #72b16e;
+  color: #856D2C;
+  &:hover {
+    color: #32322F
+  }
 }
 .menu-item-variations {
   margin-top: 0.21429em;
