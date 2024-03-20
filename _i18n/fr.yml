@@ -8,6 +8,12 @@ site:
 sections:
   other: "Autres"
 
+resources:
+  view: "Voir sur GitHub"
+  frdr_curation: 
+    title: "DFDR Processus de curation"
+    description: "Ce document décrit le processus général de curation pour les nouveaux dépôts de données dans DFDR. Si vous débutez, lisez d'abord le document de prise en main de la curation dans DFDR et créez des comptes avec DFDR et Globus."
+
 footer:
   links: Liens rapides
   copyright: Alliance de recherche numérique du Canada

@@ -356,7 +356,7 @@ p {
   padding-left: 1em;
 }
 
-.footer-navigation, .footer-contact {
+.footer-contact {
   margin: 10px;
 }
 
@@ -437,6 +437,10 @@ p {
     padding-left: 15%;
     padding-right: 15%;
   }
+
+  .footer-navigation {
+    margin: 10px;
+  }
 }
 
 /** sm size breakpoint **/
@@ -458,6 +462,10 @@ p {
     max-width: 100%;
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  .footer-navigation {
+    margin: 10px;
   }
 }
 
@@ -481,6 +489,10 @@ p {
     padding-left: 25%;
     padding-right: 25%;
   }
+
+  .footer-navigation {
+    margin: 10px 50px 10px 10px;
+  }
 }
 
 /** lg size breakpoint **/
@@ -492,6 +504,10 @@ p {
 
   .footer-social {
     max-width: 35%;
+  }
+
+  .footer-navigation {
+    margin: 10px 50px 10px 10px;
   }
 }
 
@@ -505,6 +521,10 @@ p {
   .footer-social {
     max-width: 35%;
   }
+
+  .footer-navigation {
+    margin: 10px 50px 10px 10px;
+  }
 }
 
 /** > xl size breakpoint **/
@@ -517,6 +537,10 @@ p {
   .footer-social {
     max-width: 30%;
   }
+
+  .footer-navigation {
+    margin: 10px 50px 10px 10px;
+  }
 }
 
 @media (min-width: 1561px) and (max-width: 2000px) {
@@ -527,6 +551,10 @@ p {
 
   .footer-social {
     max-width: 25%;
+  }
+
+  .footer-navigation {
+    margin: 10px 50px 10px 10px;
   }
 }
 
@@ -539,6 +567,10 @@ p {
 
   .footer-social {
     max-width: 20%;
+  }
+
+  .footer-navigation {
+    margin: 10px 50px 10px 10px;
   }
 }
 
