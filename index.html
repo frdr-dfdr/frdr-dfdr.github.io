@@ -84,22 +84,11 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      {% if site.lang == "fr" %} {% assign num = site.baseurl |
-                      size | minus: 3 %}
                       <a
-                        href="{{ site.baseurl | slice: 0, num }}/fr{% t resources.frdr_curation.sub_url %}/"
+                        href="{% t resources.frdr_curation.url %}"
                         target="_blank"
+                        >{% t resources.frdr_curation.title %}</a
                       >
-                        {% t resources.frdr_curation.title %}
-                      </a>
-                      {% elsif site.lang == "en" %}
-                      <a
-                        href="{{ site.baseurl }}{% t resources.frdr_curation.sub_url %}/"
-                        target="_blank"
-                      >
-                        {% t resources.frdr_curation.title %}
-                      </a>
-                      {% endif %}
                     </h4>
                     <span class="menu-item-price"
                       ><a
