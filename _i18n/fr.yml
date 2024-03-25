@@ -10,7 +10,8 @@ sections:
 
 resources:
   view: "Voir sur GitHub"
-  frdr_curation: 
+  frdr_curation:
+    sub_url: "/frdr_curation_workflow"
     title: "DFDR Processus de curation"
     description: "Ce document décrit le processus général de curation pour les nouveaux dépôts de données dans DFDR. Si vous débutez, lisez d'abord le document de prise en main de la curation dans DFDR et créez des comptes avec DFDR et Globus."
 
@@ -25,7 +26,7 @@ footer:
     alt: Alliance de recherche numérique du Canada
     url: "https://alliancecan.ca/fr"
   linkedin:
-    aria: 'Alliance de recherche numérique du Canada Linked In'
+    aria: "Alliance de recherche numérique du Canada Linked In"
     url: "https://www.linkedin.com/company/alliancecan/"
   twitter:
     aria: "Alliance de recherche numérique du Canada Twitter"

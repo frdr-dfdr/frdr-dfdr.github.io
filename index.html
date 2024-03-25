@@ -19,7 +19,10 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="/assets/modernizr.js" type="text/javascript"></script>
   </head>
   <body>
@@ -81,11 +84,22 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
+                      {% if site.lang == "fr" %} {% assign num = site.baseurl |
+                      size | minus: 3 %}
                       <a
-                        href="https://frdr-dfdr.github.io/frdr_curation_workflow/"
+                        href="{{ site.baseurl | slice: 0, num }}/fr{% t resources.frdr_curation.sub_url %}/"
                         target="_blank"
-                        >{% t resources.frdr_curation.title %}</a
                       >
+                        {% t resources.frdr_curation.title %}
+                      </a>
+                      {% elsif site.lang == "en" %}
+                      <a
+                        href="{{ site.baseurl }}{% t resources.frdr_curation.sub_url %}/"
+                        target="_blank"
+                      >
+                        {% t resources.frdr_curation.title %}
+                      </a>
+                      {% endif %}
                     </h4>
                     <span class="menu-item-price"
                       ><a
@@ -494,10 +508,20 @@
             style="height: 100%; width: 100%; object-fit: contain"
           />
           <div class="socials">
-            <a class="social-media-icon" href="{% t footer.linkedin.url %}" target="_blank" aria-label="{% t footer.linkedin.aria %}">
+            <a
+              class="social-media-icon"
+              href="{% t footer.linkedin.url %}"
+              target="_blank"
+              aria-label="{% t footer.linkedin.aria %}"
+            >
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a class="social-media-icon" href="{% t footer.twitter.url %}" target="_blank" aria-label="{% t footer.twitter.aria %}">
+            <a
+              class="social-media-icon"
+              href="{% t footer.twitter.url %}"
+              target="_blank"
+              aria-label="{% t footer.twitter.aria %}"
+            >
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
           </div>
@@ -508,7 +532,10 @@
             document.getElementById("currentYear").textContent = currentYear;
           });
         </script>
-        <a class="copyright" href="{% t footer.alliance.url %}" target="_blank">©&nbsp;<span id="currentYear"></span>&nbsp;{% t footer.copyright %}</a>
+        <a class="copyright" href="{% t footer.alliance.url %}" target="_blank"
+          >©&nbsp;<span id="currentYear"></span>&nbsp;{% t footer.copyright
+          %}</a
+        >
       </footer>
     </div>
 
