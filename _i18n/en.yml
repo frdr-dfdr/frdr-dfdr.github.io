@@ -14,7 +14,14 @@ resources:
     url: "https://frdr-dfdr.github.io/frdr_curation_workflow/"
     title: "FRDR Workflow Curation"
     description: "This document describes the general curation workflow for new data deposits in FRDR. If you are just getting started, read the FRDR curation onboarding document first and set up accounts with FRDR and Globus."
-
+  templates_for_correspondence:
+    url: "https://frdr-dfdr.github.io/templates_for_correspondence/"
+    title: "Templates for Correspondence"
+    description: "A resource document that outlines templates used for correspondence in the FRDR service team."
+  french_resource:
+    url: "https://frdr-dfdr.github.io/french_resource/"
+    title: "French Resource"
+    description: "A resource document that is only available in French."
 footer:
   links: Quick Links
   copyright: Digital Research Alliance of Canada

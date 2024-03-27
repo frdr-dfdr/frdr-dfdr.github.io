@@ -84,11 +84,21 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="{% t resources.frdr_curation.url %}"
-                        target="_blank"
-                        >{% t resources.frdr_curation.title %}</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.frdr_curation.url %}"
+                            target="_blank"
+                            >{% t resources.frdr_curation.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
@@ -105,68 +115,68 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-docker"
-                        target="_blank"
-                        >Introduction to Docker</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.templates_for_correspondence.url %}"
+                            target="_blank"
+                            >{% t resources.templates_for_correspondence.title
+                            %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-docker"
+                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Introduces the set of virtualization tools referred to as
-                      Docker, to create and share small reproducible computing
-                      environments.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-git"
-                        target="_blank"
-                        >Introduction to Git and GitHub</a
-                      >
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        href="https://github.com/ubc-library-rc/intro-git"
-                        target="_blank"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      Adapted from the Carpentries, introduces the basics of Git
-                      and GitHub for version control and collaboration.
+                      {% t resources.templates_for_correspondence.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-shell/"
-                        target="_blank"
-                        >Introduction to the Unix shell</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.french_resource.url %}"
+                            target="_blank"
+                            >{% t resources.french_resource.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-shell"
+                        href="https://github.com/frdr-dfdr/french_resource"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Adapted from the Carpentries, this workshop is intended to
-                      orient complete beginners to the Unix shell.
+                      {% t resources.french_resource.description %}
                     </p>
                   </div>
                 </li>
@@ -178,91 +188,99 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-jekyll"
-                        target="_blank"
-                        >Introduction to Jekyll</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.frdr_curation.url %}"
+                            target="_blank"
+                            >{% t resources.frdr_curation.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-jekyll"
+                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Teaches participants how to use Jekyll and GitHub Pages to
-                      quickly and easily publish a static website using only a
-                      browser.
+                      {% t resources.frdr_curation.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-docker"
-                        target="_blank"
-                        >Introduction to Docker</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.templates_for_correspondence.url %}"
+                            target="_blank"
+                            >{% t resources.templates_for_correspondence.title
+                            %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-docker"
+                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Introduces the set of virtualization tools referred to as
-                      Docker, to create and share small reproducible computing
-                      environments.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-git"
-                        target="_blank"
-                        >Introduction to Git and GitHub</a
-                      >
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        href="https://github.com/ubc-library-rc/intro-git"
-                        target="_blank"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      Adapted from the Carpentries, introduces the basics of Git
-                      and GitHub for version control and collaboration.
+                      {% t resources.templates_for_correspondence.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-shell/"
-                        target="_blank"
-                        >Introduction to the Unix shell</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.french_resource.url %}"
+                            target="_blank"
+                            >{% t resources.french_resource.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-shell"
+                        href="https://github.com/frdr-dfdr/french_resource"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Adapted from the Carpentries, this workshop is intended to
-                      orient complete beginners to the Unix shell.
+                      {% t resources.french_resource.description %}
                     </p>
                   </div>
                 </li>
@@ -274,91 +292,99 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-jekyll"
-                        target="_blank"
-                        >Introduction to Jekyll</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.frdr_curation.url %}"
+                            target="_blank"
+                            >{% t resources.frdr_curation.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-jekyll"
+                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Teaches participants how to use Jekyll and GitHub Pages to
-                      quickly and easily publish a static website using only a
-                      browser.
+                      {% t resources.frdr_curation.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-docker"
-                        target="_blank"
-                        >Introduction to Docker</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.templates_for_correspondence.url %}"
+                            target="_blank"
+                            >{% t resources.templates_for_correspondence.title
+                            %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-docker"
+                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Introduces the set of virtualization tools referred to as
-                      Docker, to create and share small reproducible computing
-                      environments.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-git"
-                        target="_blank"
-                        >Introduction to Git and GitHub</a
-                      >
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        href="https://github.com/ubc-library-rc/intro-git"
-                        target="_blank"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      Adapted from the Carpentries, introduces the basics of Git
-                      and GitHub for version control and collaboration.
+                      {% t resources.templates_for_correspondence.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-shell/"
-                        target="_blank"
-                        >Introduction to the Unix shell</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.french_resource.url %}"
+                            target="_blank"
+                            >{% t resources.french_resource.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-shell"
+                        href="https://github.com/frdr-dfdr/french_resource"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Adapted from the Carpentries, this workshop is intended to
-                      orient complete beginners to the Unix shell.
+                      {% t resources.french_resource.description %}
                     </p>
                   </div>
                 </li>
@@ -370,91 +396,99 @@
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-jekyll"
-                        target="_blank"
-                        >Introduction to Jekyll</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.frdr_curation.url %}"
+                            target="_blank"
+                            >{% t resources.frdr_curation.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-jekyll"
+                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Teaches participants how to use Jekyll and GitHub Pages to
-                      quickly and easily publish a static website using only a
-                      browser.
+                      {% t resources.frdr_curation.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-docker"
-                        target="_blank"
-                        >Introduction to Docker</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.templates_for_correspondence.url %}"
+                            target="_blank"
+                            >{% t resources.templates_for_correspondence.title
+                            %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">EN</div>
+                          </div>
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-docker"
+                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Introduces the set of virtualization tools referred to as
-                      Docker, to create and share small reproducible computing
-                      environments.
-                    </p>
-                  </div>
-                </li>
-
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-git"
-                        target="_blank"
-                        >Introduction to Git and GitHub</a
-                      >
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        href="https://github.com/ubc-library-rc/intro-git"
-                        target="_blank"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      Adapted from the Carpentries, introduces the basics of Git
-                      and GitHub for version control and collaboration.
+                      {% t resources.templates_for_correspondence.description %}
                     </p>
                   </div>
                 </li>
                 <li class="menu-item">
                   <div class="menu-item-info">
                     <h4 class="menu-item-name">
-                      <a
-                        href="https://ubc-library-rc.github.io/intro-shell/"
-                        target="_blank"
-                        >Introduction to the Unix shell</a
-                      >
+                      <div class="parent">
+                        <div class="child">
+                          <a
+                            class="resource-title"
+                            href="{% t resources.french_resource.url %}"
+                            target="_blank"
+                            >{% t resources.french_resource.title %}</a
+                          >
+                        </div>
+                        <div class="child">
+                          <div class="lang-tag-outer">
+                            <div class="lang-tag-inner">FR</div>
+                          </div>
+                        </div>
+                      </div>
                     </h4>
                     <span class="menu-item-price"
                       ><a
-                        href="https://github.com/ubc-library-rc/intro-shell"
+                        href="https://github.com/frdr-dfdr/french_resource"
                         target="_blank"
                         >{% t resources.view %}</a
                       ></span
                     >
                     <p class="menu-item-description">
-                      Adapted from the Carpentries, this workshop is intended to
-                      orient complete beginners to the Unix shell.
+                      {% t resources.french_resource.description %}
                     </p>
                   </div>
                 </li>
@@ -464,7 +498,7 @@
             <a
               id="btn-view-full-menu"
               class="btn-view-full-menu"
-              href="http://github.com/square"
+              href="http://github.com/frdr-dfdr"
               >View full list of repositories</a
             >
           </article>
