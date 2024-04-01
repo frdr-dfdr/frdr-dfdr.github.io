@@ -59,7 +59,6 @@
           <div class="profile-description">
             <p>{% t site.instructions %}</p>
           </div>
-
           <article class="profile-menu" id="menu">
             <nav class="menu-navigation">
               <ul class="menu-navigation-list">
@@ -76,8 +75,15 @@
                   <a href="#other">{% t sections.other %}</a>
                 </li>
               </ul>
+              <a href="list.html" class="view-btn"
+                ><i
+                  class="fa fa-list-ul"
+                  style="color: white; padding-right: 3px"
+                ></i>
+                {% t site.view.list %}</a
+              >
+              <div class="clear"></div>
             </nav>
-
             <div id="section1" class="menu-category">
               <h3 class="menu-category-name">Section 1</h3>
               <ol class="menu-category-list">

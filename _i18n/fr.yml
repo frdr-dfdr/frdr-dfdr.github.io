@@ -2,8 +2,15 @@ site:
   name: DFDR Équipe de service
   title: Ressources de l'équipe de service DFDR
   language: English
+  view:
+    list: Liste
+    grid: Grille
   header: Cette page contient des liens vers un certain nombre de ressources créées par l'équipe du service DFDR pour usage interne et pour usage par la communauté de gestion des données de recherche.
   instructions: Cliquez sur le titre d'une section pour afficher toutes les ressources qui s'y rapportent.
+
+all:
+  description: Liste de toutes les ressources offertes par l'équipe de service du DFDR.
+  instructions: Cliquez sur le lien d'une ressource pour voir son contenu.
 
 sections:
   other: "Autres"
