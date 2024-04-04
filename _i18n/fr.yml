@@ -7,6 +7,7 @@ site:
     grid: Grille
   header: Cette page contient des liens vers un certain nombre de ressources créées par l'équipe du service DFDR pour usage interne et pour usage par la communauté de gestion des données de recherche.
   instructions: Cliquez sur le titre d'une section pour afficher toutes les ressources qui s'y rapportent.
+  view_source: Voir ce contenu sur GitHub
 
 all:
   description: Liste de toutes les ressources offertes par l'équipe de service du DFDR.

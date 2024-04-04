@@ -1090,6 +1090,13 @@ p {
   font-weight: 300;
   margin: 0 auto;
 }
+.all-instructions {
+  font-size: 18px;
+  line-height: 1.45455em;
+  color: #212529;
+  padding-bottom: 10px;
+}
+
 /* menu */
 .menu-navigation {
   margin-top: 0.5em;
@@ -1100,7 +1107,7 @@ p {
   margin: 0 auto;
 }
 .menu-navigation-list-item {
-  font-size: 1.14286em;
+  font-size: 18px;
   line-height: 1.5em;
   display: inline-block;
   margin-left: 16px;
@@ -1257,6 +1264,8 @@ p {
 .menu-item-description,
 .business-info-address,
 .business-bio {
+  font-size: 16px;
+  line-height: 1.5;
   color: #212529;
 }
 .has-images .menu-item-description,
@@ -1267,6 +1276,7 @@ p {
 .menu-item-price {
   color: #856d2c;
   display: block;
+  padding-bottom: 8px;
 }
 .menu-item-variations .menu-item-price {
   display: inline-block;
@@ -1309,7 +1319,7 @@ p {
   color: #856d2c;
   cursor: pointer;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: -2.95em;
   padding-top: 2.64286em;
   padding-bottom: 2.28571em;
@@ -1553,6 +1563,10 @@ p {
     width: 100%;
   }
   .profile-description p {
+    font-size: 1.14286em;
+    line-height: 1.5em;
+  }
+  .all-instructions {
     font-size: 1.14286em;
     line-height: 1.5em;
   }
@@ -1835,6 +1849,10 @@ p {
     width: 100%;
   }
   .profile-description p {
+    font-size: 1.14286em;
+    line-height: 1.5em;
+  }
+  .all-instructions {
     font-size: 1.14286em;
     line-height: 1.5em;
   }
@@ -3355,6 +3373,8 @@ a.lang-btn:hover {
   float: left;
   font-size: 16px;
   color: #212529;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 a.view-btn {
@@ -3395,13 +3415,9 @@ a.view-btn:hover {
 }
 
 .resource-title {
+  font-size: 18px;
+  line-height: 1.5;
   padding-right: 3px;
-}
-
-.all-instructions {
-  font-size: 16px;
-  color: #212529;
-  padding-bottom: 10px;
 }
 
 .menu-category-name-all {
@@ -3424,4 +3440,9 @@ li.all-item:not(:last-child) {
 
 .clear {
   clear: both;
+}
+
+.view-item-github {
+  font-size: 16px;
+  line-height: 1.5;
 }
