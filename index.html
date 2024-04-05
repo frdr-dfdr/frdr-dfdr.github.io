@@ -9,7 +9,7 @@
     <title>{% t site.title %}</title>
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <!--TODO: Minify and switch back to base.css-->
@@ -26,504 +26,510 @@
     <script src="/assets/modernizr.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="profile">
-        <section class="profile-masthead" id="masthead">
-          <header class="profile-logo">
-            <div class="profile-logo-image">
-              <img
-                alt="FRDR Logo"
-                src="/images/frdr-logo.png"
-                style="height: 100%; width: 100%; object-fit: contain"
-              />
-            </div>
-            <div class="profile-name">
-              <h1 class="site-title">{% t site.name %}</h1>
-            </div>
-          </header>
-        </section>
-        <div>
-          <p class="description">{% t site.header %}</p>
-          {% if site.lang == "fr" %}
-          <a href="/" class="lang-btn">{% t site.language %}</a>
-          {% elsif site.lang == "en" %}
-          <a href="/fr" class="lang-btn">{% t site.language %}</a>
-          {% endif %}
-        </div>
-        <section class="profile-content" id="content">
-          <div class="profile-description">
-            <p>{% t site.instructions %}</p>
+    <main role="main">
+      <div class="wrapper">
+        <div class="profile">
+          <section class="profile-masthead" id="masthead">
+            <header class="profile-logo">
+              <div class="profile-logo-image">
+                <img
+                  alt="FRDR Logo"
+                  src="/images/frdr-logo.png"
+                  style="height: 100%; width: 100%; object-fit: contain"
+                />
+              </div>
+              <div class="profile-name">
+                <h1 class="site-title">{% t site.name %}</h1>
+              </div>
+            </header>
+          </section>
+          <div>
+            <p class="description">{% t site.header %}</p>
+            {% if site.lang == "fr" %}
+            <a href="/" class="lang-btn">{% t site.language %}</a>
+            {% elsif site.lang == "en" %}
+            <a href="/fr" class="lang-btn">{% t site.language %}</a>
+            {% endif %}
           </div>
-          <article class="profile-menu" id="menu">
-            <nav class="menu-navigation">
-              <ul class="menu-navigation-list">
-                <li class="menu-navigation-list-item">
-                  <a href="#section1">Section 1</a>
-                </li>
-                <li class="menu-navigation-list-item">
-                  <a href="#section2">Section 2</a>
-                </li>
-                <li class="menu-navigation-list-item">
-                  <a href="#section3">Section 3</a>
-                </li>
-                <li class="menu-navigation-list-item">
-                  <a href="#other">{% t sections.other %}</a>
-                </li>
-              </ul>
-              <a href="list.html" class="view-btn"
-                ><i
-                  class="fa fa-list-ul"
-                  style="color: white; padding-right: 3px"
-                ></i>
-                {% t site.view.list %}</a
-              >
-              <div class="clear"></div>
-            </nav>
-            <div id="section1" class="menu-category">
-              <h3 class="menu-category-name">Section 1</h3>
-              <ol class="menu-category-list">
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.frdr_curation.url %}"
-                            target="_new"
-                            >{% t resources.frdr_curation.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.frdr_curation.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.templates_for_correspondence.url %}"
-                            target="_new"
-                            >{% t resources.templates_for_correspondence.title
-                            %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
-                          </div>
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.templates_for_correspondence.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.french_resource.url %}"
-                            target="_new"
-                            >{% t resources.french_resource.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/french_resource"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.french_resource.description %}
-                    </p>
-                  </div>
-                </li>
-              </ol>
+          <section class="profile-content" id="content">
+            <div class="profile-description">
+              <p>{% t site.instructions %}</p>
             </div>
-            <div id="section2" class="menu-category">
-              <h3 class="menu-category-name">Section 2</h3>
-              <ol class="menu-category-list">
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.frdr_curation.url %}"
-                            target="_new"
-                            >{% t resources.frdr_curation.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
+            <article class="profile-menu" id="menu">
+              <nav class="menu-navigation">
+                <ul class="menu-navigation-list">
+                  <li class="menu-navigation-list-item">
+                    <a href="#section1">Section 1</a>
+                  </li>
+                  <li class="menu-navigation-list-item">
+                    <a href="#section2">Section 2</a>
+                  </li>
+                  <li class="menu-navigation-list-item">
+                    <a href="#section3">Section 3</a>
+                  </li>
+                  <li class="menu-navigation-list-item">
+                    <a href="#other">{% t sections.other %}</a>
+                  </li>
+                </ul>
+                <a href="list.html" class="view-btn"
+                  ><i
+                    class="fa fa-list-ul"
+                    style="color: white; padding-right: 3px"
+                  ></i>
+                  {% t site.view.list %}</a
+                >
+                <div class="clear"></div>
+              </nav>
+              <div id="section1" class="menu-category">
+                <h2 class="menu-category-name">Section 1</h2>
+                <ol class="menu-category-list">
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h2 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.frdr_curation.url %}"
+                              target="_new"
+                              >{% t resources.frdr_curation.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.frdr_curation.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.templates_for_correspondence.url %}"
-                            target="_new"
-                            >{% t resources.templates_for_correspondence.title
-                            %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
+                      </h2>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/frdr_curation_workflow"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.frdr_curation.description %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.templates_for_correspondence.url %}"
+                              target="_new"
+                              >{% t resources.templates_for_correspondence.title
+                              %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/templates_for_correspondence"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.templates_for_correspondence.description
+                        %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.french_resource.url %}"
+                              target="_new"
+                              >{% t resources.french_resource.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.templates_for_correspondence.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.french_resource.url %}"
-                            target="_new"
-                            >{% t resources.french_resource.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/french_resource"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.french_resource.description %}
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div id="section2" class="menu-category">
+                <h2 class="menu-category-name">Section 2</h2>
+                <ol class="menu-category-list">
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.frdr_curation.url %}"
+                              target="_new"
+                              >{% t resources.frdr_curation.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/french_resource"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.french_resource.description %}
-                    </p>
-                  </div>
-                </li>
-              </ol>
-            </div>
-            <div id="section3" class="menu-category">
-              <h3 class="menu-category-name">Section 3</h3>
-              <ol class="menu-category-list">
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.frdr_curation.url %}"
-                            target="_new"
-                            >{% t resources.frdr_curation.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/frdr_curation_workflow"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.frdr_curation.description %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.templates_for_correspondence.url %}"
+                              target="_new"
+                              >{% t resources.templates_for_correspondence.title
+                              %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.frdr_curation.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.templates_for_correspondence.url %}"
-                            target="_new"
-                            >{% t resources.templates_for_correspondence.title
-                            %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/templates_for_correspondence"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.templates_for_correspondence.description
+                        %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.french_resource.url %}"
+                              target="_new"
+                              >{% t resources.french_resource.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/french_resource"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.french_resource.description %}
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div id="section3" class="menu-category">
+                <h2 class="menu-category-name">Section 3</h2>
+                <ol class="menu-category-list">
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.frdr_curation.url %}"
+                              target="_new"
+                              >{% t resources.frdr_curation.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.templates_for_correspondence.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.french_resource.url %}"
-                            target="_new"
-                            >{% t resources.french_resource.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/frdr_curation_workflow"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.frdr_curation.description %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.templates_for_correspondence.url %}"
+                              target="_new"
+                              >{% t resources.templates_for_correspondence.title
+                              %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/french_resource"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.french_resource.description %}
-                    </p>
-                  </div>
-                </li>
-              </ol>
-            </div>
-            <div id="other" class="menu-category">
-              <h3 class="menu-category-name">{% t sections.other %}</h3>
-              <ol class="menu-category-list">
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.frdr_curation.url %}"
-                            target="_new"
-                            >{% t resources.frdr_curation.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/templates_for_correspondence"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.templates_for_correspondence.description
+                        %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.french_resource.url %}"
+                              target="_new"
+                              >{% t resources.french_resource.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/frdr_curation_workflow"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.frdr_curation.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.templates_for_correspondence.url %}"
-                            target="_new"
-                            >{% t resources.templates_for_correspondence.title
-                            %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">EN</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/french_resource"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.french_resource.description %}
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div id="other" class="menu-category">
+                <h2 class="menu-category-name">{% t sections.other %}</h2>
+                <ol class="menu-category-list">
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.frdr_curation.url %}"
+                              target="_new"
+                              >{% t resources.frdr_curation.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
                           </div>
                         </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/frdr_curation_workflow"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.frdr_curation.description %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.templates_for_correspondence.url %}"
+                              target="_new"
+                              >{% t resources.templates_for_correspondence.title
+                              %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">EN</div>
+                            </div>
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/templates_for_correspondence"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.templates_for_correspondence.description %}
-                    </p>
-                  </div>
-                </li>
-                <li class="menu-item">
-                  <div class="menu-item-info">
-                    <h4 class="menu-item-name">
-                      <div class="parent">
-                        <div class="child">
-                          <a
-                            class="resource-title"
-                            href="{% t resources.french_resource.url %}"
-                            target="_new"
-                            >{% t resources.french_resource.title %}</a
-                          >
-                        </div>
-                        <div class="child">
-                          <div class="lang-tag-outer">
-                            <div class="lang-tag-inner">FR</div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/templates_for_correspondence"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.templates_for_correspondence.description
+                        %}
+                      </p>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <div class="menu-item-info">
+                      <h3 class="menu-item-name">
+                        <div class="parent">
+                          <div class="child">
+                            <a
+                              class="resource-title"
+                              href="{% t resources.french_resource.url %}"
+                              target="_new"
+                              >{% t resources.french_resource.title %}</a
+                            >
+                          </div>
+                          <div class="child">
+                            <div class="lang-tag-outer">
+                              <div class="lang-tag-inner">FR</div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </h4>
-                    <span class="menu-item-price"
-                      ><a
-                        class="view-item-github"
-                        href="https://github.com/frdr-dfdr/french_resource"
-                        target="_new"
-                        >{% t resources.view %}</a
-                      ></span
-                    >
-                    <p class="menu-item-description">
-                      {% t resources.french_resource.description %}
-                    </p>
-                  </div>
-                </li>
-              </ol>
-            </div>
+                      </h3>
+                      <span class="menu-item-price"
+                        ><a
+                          class="view-item-github"
+                          href="https://github.com/frdr-dfdr/french_resource"
+                          target="_new"
+                          >{% t resources.view %}</a
+                        ></span
+                      >
+                      <p class="menu-item-description">
+                        {% t resources.french_resource.description %}
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
 
-            <a
-              id="btn-view-full-menu"
-              class="btn-view-full-menu"
-              href="https://github.com/frdr-dfdr/frdr-dfdr.github.io"
-              ><i class="fa fa-github" aria-hidden="true"></i> {% t
-              site.view_source %}</a
-            >
-          </article>
-        </section>
+              <a
+                id="btn-view-full-menu"
+                class="btn-view-full-menu"
+                href="https://github.com/frdr-dfdr/frdr-dfdr.github.io"
+                ><i class="fa fa-github" aria-hidden="true"></i> {% t
+                site.view_source %}</a
+              >
+            </article>
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
 
     <div id="footer-container">
-      <footer id="websiteFooter">
+      <footer id="websiteFooter" role="contentinfo">
         <div class="footer-navigation">
-          <h3 class="footer-title">{% t footer.links %}</h3>
+          <h2 class="footer-title">{% t footer.links %}</h2>
           <ul>
             <li><a href="/">Link 1</a></li>
             <li><a href="/">Link 2</a></li>
