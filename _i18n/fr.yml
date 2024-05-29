@@ -21,6 +21,7 @@ resources:
   frdr_curation:
     url: "https://frdr-dfdr.github.io/frdr_curation_workflow/"
     title: "DFDR Processus de curation"
+    description: "Ce document décrit le processus général de curation pour les nouveaux dépôts de données dans DFDR. Si vous débutez, lisez d'abord le document de prise en main de la curation dans DFDR et créez des comptes avec DFDR et Globus."
   templates_for_correspondence:
     url: "https://frdr-dfdr.github.io/templates_for_correspondence/fr/"
     title: "Modèles pour correspondance"
