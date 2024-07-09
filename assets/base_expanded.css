@@ -505,7 +505,10 @@ p {
 
 .footer-navigation ul {
   list-style: none;
-  padding: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 2%; 
+  padding-top: 5%;
 }
 
 .footer-navigation ul li {
